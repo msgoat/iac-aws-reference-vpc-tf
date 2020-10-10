@@ -20,8 +20,7 @@ locals {
 }
 
 module "reference_vpc" {
-  source = "../../modules/reference_vpc"
-  # source = "git::https://git.at.automotive.msg.team/cloudtrain/iac-networks-aws-module.git"
+  source = "../.."
   region_name = var.region_name
   organization_name = var.organization_name
   department_name = var.department_name
